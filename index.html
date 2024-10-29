@@ -144,7 +144,7 @@
             var p1 = path.getPointAt(percentage%1);
             var p2 = path.getPointAt((percentage + 0.01)%1);
             camera.position.set(p1.x,p1.y,p1.z);
-            camera.lookAt(0,0,0);
+            camera.lookAt(p2);
             
             //Render the scene
             renderer.render(scene, camera);
